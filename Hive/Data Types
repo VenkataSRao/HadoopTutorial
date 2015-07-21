@@ -1,0 +1,51 @@
+Hive data types are categorized into two types. They are the 
+primitive and complex data types. ^
+
+Primitive Data Types:
+====================
+
+
+TINYINT     1 byte
+SMALLINT    2 byte
+INT         4 byte
+BIGINT      8 byte
+FLOAT       4 byte (single precision 
+
+floating point numbers)
+DOUBLE      8 byte (double precision 
+
+floating point numbers)
+BOOLEAN     TRUE/FALSE value
+STRING      Max size is 2GB.
+
+
+Complex Data Types:
+===================
+
+Arrays:
+=======
+Contain a list of elements of the same data type. These elements are accessed by using an index. For example 
+an array, “fruits”, containing a list of elements [‘apple’, ’mango’, ‘orange’], the element “apple” in the array can be 
+accessed by specifying fruits[1].
+
+Maps:
+=======
+Contains key, value pairs. The elements are accessed by using the keys. For example a map, “pass_list” containing the 
+“user name” as key and “password” as value, the password of the user can be accessed by specifying pass_list[‘username’]
+
+Structs:
+=========
+Contains elements of different data types. The elements can be accessed by using the dot notation. For example 
+in a struct, ”car”, the color of the car can be retrieved as specifying car.color
+
+
+Below Create table statement with complex data types
+
+CREATE TABLE complex_data_types
+(
+  Fruits     ARRAY<string>,
+  Pass_list  MAP<string,string>,
+  Car        STRUCT<color:string, wheel_size:float>
+);
+
+
