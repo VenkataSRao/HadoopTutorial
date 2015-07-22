@@ -1,0 +1,21 @@
+PIG has two types of data types
+
+Simple and Complex
+
+Simple:
+=======
+int
+long
+float
+double
+chararray
+bytearray
+boolean
+datetime
+
+Complex:
+========
+
+tuple: An ordered set of fields. ex: (15,2)
+bag: A collection of tuples. ex: {(15,2), (18,4)}
+map: A set of key value pairs. Ex: [ key#value <, key#value …> ]
