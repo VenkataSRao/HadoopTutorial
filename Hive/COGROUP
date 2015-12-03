@@ -1,0 +1,1 @@
+COGROUP can be used to group two tables by a column and then join on the grouped column.
