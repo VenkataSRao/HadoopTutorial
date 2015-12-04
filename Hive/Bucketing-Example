@@ -11,3 +11,4 @@ CREATE TABLE stocks_buck(market string, stock string, sdate STRING ,open double,
 
 
 insert into table stocks_buck select market, stock, sdate, open,high,low,close,volume,adj_close from stocks;
+
